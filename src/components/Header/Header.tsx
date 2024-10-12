@@ -24,7 +24,6 @@ const Header = () => {
             <div className='menu-desktop'>
                 <MenuList/>
             </div>
-            {/* {!aside ? '': (<MenuList/>)} */}
 
             <button onClick={openAside}> <RxHamburgerMenu className='burger-icon'/> </button>
             {aside  ? (
