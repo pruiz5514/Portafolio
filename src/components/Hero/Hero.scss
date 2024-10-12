@@ -1,0 +1,34 @@
+@import '../../app/globals.scss';
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .hero-title{
+        position: absolute;
+        color: $white;
+        font-size: 100px;
+        z-index: 1;
+        text-align: center;
+
+        #name{
+            opacity: 0;
+        }
+        #frontend{
+            opacity: 0;
+        }
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100%; 
+        object-fit: cover; 
+      }
+
+}

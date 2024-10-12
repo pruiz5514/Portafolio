@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 $black: #000000;
+$gray: #86868b;
+$white: #ffffff;
 
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: $black;
 }
 
