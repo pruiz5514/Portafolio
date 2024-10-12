@@ -1,4 +1,4 @@
-import React from 'react'
+import './MenuList.scss'
 
 const MenuList = () => {
   return (
