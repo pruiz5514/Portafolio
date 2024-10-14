@@ -13,8 +13,6 @@ const MenuList = () => {
     }
     fetchLanguage()
   },[]);
-
-  console.log(language);
   
   const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>)=>{
     const lang = event.target.value;

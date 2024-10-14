@@ -1,5 +1,5 @@
 @import '../../app/globals.scss';
-section{
+.hero-section{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -10,9 +10,10 @@ section{
     .hero-title{
         position: absolute;
         color: $white;
-        font-size: 70px;
+        font-size: 55px;
         z-index: 1;
         text-align: center;
+        padding: 0px 20px;
 
         #name{
             opacity: 0;
@@ -34,7 +35,7 @@ section{
 }
 
 @media (min-width: 600px){
-    section{
+    .hero-section{
         .hero-title{
             font-size: 100px;
         }

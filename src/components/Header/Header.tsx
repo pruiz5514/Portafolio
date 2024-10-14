@@ -2,7 +2,7 @@
 import { RxHamburgerMenu } from 'react-icons/rx'
 import './Header.scss'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IoClose } from 'react-icons/io5'
 import MenuList from '../MenuList.tsx/MenuList'
 
@@ -17,8 +17,26 @@ const Header = () => {
     setAside(false);
   }
 
+  const [headerClass, setHeaderClass] = useState('');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHeaderClass('scrolled'); 
+      } else {
+        setHeaderClass(''); 
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); 
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={headerClass}>
         <nav>
             <Image src='/image/logo.png' alt='logo' width={120} height={2000} />
             <div className='menu-desktop'>

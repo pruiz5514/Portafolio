@@ -1,0 +1,49 @@
+@import '../../app/globals.scss';
+
+.about-me_section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $black;
+    padding: 30px;
+
+    .about-me_title{
+        color: $gray;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .about-info_container{
+        width: 100%;
+
+        .about-text_container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+    }
+
+    .description_p{
+        text-align: justify ;
+        color: $white;
+    }
+}
+
+@media (min-width: 600px){
+    .about-me_section{
+        .about-me_title{
+            margin-bottom: 10px;
+        }
+
+        .about-info_container{
+            width: 100%;
+            display: flex;
+
+            .about-text_container{
+                width: 50%;
+                padding-right: 10px;
+            }            
+        }
+    }
+}

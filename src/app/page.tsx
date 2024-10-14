@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe/AboutMe";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="bg-black w-full h-[100vh]">
       <Header/>
       <Hero/>
+      <AboutMe/>
     </div>
   );
 }
