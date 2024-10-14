@@ -8,7 +8,7 @@ const MenuList = () => {
 
   useEffect(()=>{
     const fetchLanguage = async () =>{
-        let lang = await getLanguage() ; 
+        const lang = await getLanguage() ; 
         setLanguageState(String(lang))
     }
     fetchLanguage()
