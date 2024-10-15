@@ -14,13 +14,21 @@
 
     .about-info_container{
         width: 100%;
+        height: 700px;
+        border: 1px solid black;
 
         .about-text_container{
             width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             gap: 15px;
 
+        }
+
+        .about-model_container{
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -41,9 +49,16 @@
             display: flex;
 
             .about-text_container{
+                height: 100%;
                 width: 50%;
                 padding-right: 10px;
-            }            
+            }          
+            
+            .about-model_container{
+                height: 100%;
+                width: 50%;
+                padding-left: 10px;
+            }
         }
     }
 }
