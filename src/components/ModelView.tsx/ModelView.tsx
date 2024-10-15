@@ -13,7 +13,6 @@ const ModelView = () => {
         <Canvas className='w-full h-full  border-gray-500'>
         <OrbitControls 
             makeDefault
-
             enableZoom={false}
             enablePan={false}
             rotateSpeed={0.4}
