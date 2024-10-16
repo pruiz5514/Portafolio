@@ -14,7 +14,7 @@
 
     .about-info_container{
         width: 100%;
-        height: 700px;
+        height: auto;
         border: 1px solid black;
 
         .about-text_container{
@@ -23,6 +23,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            margin-bottom: 30px;
 
         }
 
@@ -38,8 +39,9 @@
     }
 }
 
-@media (min-width: 600px){
+@media (min-width: 900px){
     .about-me_section{
+        padding: 30px 80px;
         .about-me_title{
             margin-bottom: 10px;
         }
@@ -47,11 +49,13 @@
         .about-info_container{
             width: 100%;
             display: flex;
+            
 
             .about-text_container{
                 height: 100%;
                 width: 50%;
                 padding-right: 10px;
+                font-size: 20px;
             }          
             
             .about-model_container{
