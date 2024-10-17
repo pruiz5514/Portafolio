@@ -6,15 +6,22 @@ Source: https://sketchfab.com/3d-models/animated-astronaut-character-in-space-su
 Title: Animated Astronaut Character in Space Suit Loop
 */
 
-import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import React, { useEffect, useRef } from 'react'
+import { useGLTF, useAnimations, useTexture } from '@react-three/drei'
 
 function Model(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF(
     '/models/animated_astronaut_character_in_space_suit_loop.glb'
   )
-  const { actions } = useAnimations(animations, group)
+  const { actions } = useAnimations(animations, group);
+  const textures = useTexture('/models/textures/gltf_embedded_0.png');
+
+  useEffect(()=>{
+    actions['wave'].reset().fadeIn(.5).play();
+  })
+
+  
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
@@ -25,30 +32,43 @@ function Model(props) {
                 <group name="skeletal3_6">
                   <group name="GLTF_created_0">
                     <primitive object={nodes.GLTF_created_0_rootJoint} />
+
                     <skinnedMesh
                       name="Object_99"
                       geometry={nodes.Object_99.geometry}
                       material={materials.material_0}
                       skeleton={nodes.Object_99.skeleton}
-                    />
+                    >
+                      <meshStandardMaterial map={textures} map-flipY={false} />
+                    </skinnedMesh>
+
                     <skinnedMesh
                       name="Object_100"
                       geometry={nodes.Object_100.geometry}
                       material={materials.material_0}
                       skeleton={nodes.Object_100.skeleton}
-                    />
+                    >
+                      <meshStandardMaterial map={textures} map-flipY={false}/>
+                    </skinnedMesh>
+
                     <skinnedMesh
                       name="Object_103"
                       geometry={nodes.Object_103.geometry}
                       material={materials.material_1}
                       skeleton={nodes.Object_103.skeleton}
-                    />
+                    >
+                      <meshStandardMaterial map={textures} map-flipY={false}/>
+                    </skinnedMesh>
+
                     <skinnedMesh
                       name="Object_106"
                       geometry={nodes.Object_106.geometry}
                       material={materials.material_2}
                       skeleton={nodes.Object_106.skeleton}
-                    />
+                    >
+                      <meshStandardMaterial map={textures} map-flipY={false}/>
+                    </skinnedMesh>
+                    
                     <group name="_3_correction">
                       <group name="_3" />
                     </group>

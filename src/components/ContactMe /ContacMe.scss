@@ -1,0 +1,70 @@
+@import '../../app/globals.scss';
+
+.contact_me-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $black;
+    padding: 30px;
+
+    .contact_me-h1{
+        color: $gray;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .contact_me_info-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .contact_me_text-container{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: justify;
+            .contact_me-h3{
+                color: $gray;
+                font-size: 22px;
+            }
+        
+            .contact_me-p{
+                color: $white;
+                font-size: 18px;
+            }
+
+            .social_media-ul{
+                margin-top: 15px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                gap: 15px;
+
+                li a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .contact_me_form-container{
+        width: 100%;
+
+        .contact_me-h3{
+            color: $gray;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+
+    
+}
+
+@media (min-width: 900px){
+    .contact_me-section{
+        padding: 30px 80px;
+    }
+}

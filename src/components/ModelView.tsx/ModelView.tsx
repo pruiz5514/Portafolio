@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber';
 import Astronaut from '../Austronaut/Astronaut';
 import Lights from '../Lights';
-import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import { Environment, OrbitControls, PerspectiveCamera } from '@react-three/drei';
 
 const ModelView = () => {
   return (
@@ -21,7 +21,7 @@ const ModelView = () => {
         <Lights />
 
         {/* Ajuste de posición y escala del Astronaut */}
-        <group position={[0, -1.8, 0]} scale={[1.5, 1.5, 1.5]}>
+        <group position={[0, -1.4, 0]} scale={[1.5, 1.5, 1.5]}>
           <Astronaut />
         </group>
       </Canvas>

@@ -1,0 +1,20 @@
+@import '../../app/globals.scss';
+
+.projects-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $dark-gray;
+    padding: 30px;
+
+    .projects-h1{
+        color: $gray;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 900px){
+    .projects-section{
+        padding: 30px 80px;
+    }
+}
