@@ -9,14 +9,17 @@ const Projects = () => {
   const t = useTranslations('Projects');
   return (
     <section className="projects-section">
-      <h1 className='projects-h1'> {t('title')}</h1>
+      <div className='projects-container'>
+        <h1 className='projects-h1'> {t('title')}</h1>
 
-      <div>
-        {projects.map((project:IProject) => (
-          <ProjectCard key={project.name} project={project}/>
-        ))}
-        
+        `<div>
+          {projects.map((project:IProject) => (
+            <ProjectCard key={project.name} project={project}/>
+          ))}
+          
+        </div>`
       </div>
+      
     </section>
   )
 }

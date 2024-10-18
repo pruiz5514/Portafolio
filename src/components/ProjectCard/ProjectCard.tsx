@@ -28,7 +28,7 @@ const ProjectCard :React.FC<CardProps>  = ({project}) => {
                 <div className='card_web-button'>
                    <Link target='blanck' href={urlWeb}><Button><TbWorldWww className='text-2xl'/> Ver pagina  </Button></Link> 
                 </div>
-            </div>
+        </div>
     </article>
   )
 }
