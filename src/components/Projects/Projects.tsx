@@ -13,7 +13,7 @@ const Projects = () => {
 
       <div>
         {projects.map((project:IProject) => (
-          <ProjectCard project={project}/>
+          <ProjectCard key={project.name} project={project}/>
         ))}
         
       </div>
