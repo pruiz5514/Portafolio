@@ -1,10 +1,10 @@
 import './ModelView.scss'
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
 import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber';
 import Astronaut from '../Austronaut/Astronaut';
 import Lights from '../Lights';
-import { Environment, OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 
 const ModelView = () => {
   return (
