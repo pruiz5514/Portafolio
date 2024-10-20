@@ -1,9 +1,18 @@
+'use client'
 import { useTranslations } from 'next-intl';
 import './AboutMe.scss'
 import Model from '../Model/Model';
+import { useGSAP } from '@gsap/react';
+import { animateWithGsap } from '@/utils/animations';
 
 const AboutMe = () => {
   const t = useTranslations('About');
+  
+  useGSAP(() => {
+    animateWithGsap('.about-me_title', {y:0, opacity:1})
+    animateWithGsap('.about-text_container', {x:0, opacity:1, duration:2, ease: 'power2.inO'})
+    
+  },[])
   return (
     <section className='about-me_section'>
       <div className='about-me_container'>

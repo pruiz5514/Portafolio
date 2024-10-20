@@ -16,11 +16,13 @@
         color: $gray;
         font-size: 50px;
         margin-bottom: 20px;
+        opacity: 0;
     }
 }
 
 @media (min-width: 900px){
     .projects-section{
+        padding-top: 60px;
         .projects-container{
             width: 80%;
             margin: 0 auto;

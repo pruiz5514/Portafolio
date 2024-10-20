@@ -15,6 +15,7 @@
             color: $gray;
             font-size: 50px;
             margin-bottom: 20px;
+            opacity: 0;
         }
     
         .contact_me_info-container{
@@ -28,6 +29,9 @@
                 flex-direction: column;
                 gap: 15px;
                 text-align: justify;
+                opacity: 0;
+                transform: translateX(-100px);
+
                 .contact_me-h3{
                     color: $gray;
                     font-size: 22px;
@@ -58,6 +62,8 @@
         }
         .contact_me_form-container{
             width: 100%;
+            opacity: 0;
+            transform: translateX(100px);
     
             .contact_me-h3{
                 color: $gray;
@@ -71,12 +77,16 @@
 
 @media (min-width: 900px){
     .contact_me-section{
-        padding: 30px 0;
+        padding-top: 60px;
 
         .contact_me-container{
             width: 80%;
             margin: 0 auto;
             height: 100%;
+
+            .contact_me-h1{
+                margin-bottom: 40px;
+            }
 
             .contact_me_info-container{
                 flex-direction: row;

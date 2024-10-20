@@ -11,6 +11,7 @@
     },
 
     "About" : {
+      "title": "About me",
       "description1" : "Hi I am Pablo Ruiz, an aeronautical engineer with a strong passion for web development and data analysis. With an advanced level of English, I thrive in both collaborative and independent environments, solving complex problems with efficiency and creativity. Through professional experience and personal projects, I’ve honed my skills in HTML, CSS and programming languages such as Javascript, Typescript, and Python. My expertise extends to modern frontend frameworks like React, Next.js, and Angular, as well as version control using Git.",
       "description2": "I am constantly expanding my knowledge of UI/UX design principles, responsive web design, and performance optimization. I value writing clean, maintainable code and delivering intuitive user experiences. My background in engineering has also equipped me with a unique perspective on problem-solving, which I apply to every challenge in web development."
     },

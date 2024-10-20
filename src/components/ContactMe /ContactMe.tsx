@@ -1,11 +1,21 @@
+'use client';
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './ContacMe.scss'
 import { useTranslations } from "next-intl";
 import { IoMdMail } from 'react-icons/io';
 import ContactMeForm from '../ContactMeForm/ContactMeForm';
+import { useGSAP } from '@gsap/react';
+import { animateWithGsap } from '@/utils/animations';
 
 const ContactMe = () => {
   const t = useTranslations('Contact');
+  useGSAP(() => {
+    animateWithGsap('.contact_me-h1', {y:0, opacity:1})
+    animateWithGsap('.contact_me_text-container', {x:0, opacity:1, duration:1.8, ease: 'power2.inOut'})
+    animateWithGsap('.contact_me_form-container', {x:0, opacity:1, duration:1.8, ease: 'power2.inOut'})
+  },[])
+
   return (
     <section className="contact_me-section">
       <div className='contact_me-container'>

@@ -1,4 +1,4 @@
-import { getLanguage, setLanguage } from '../../../utils/language';
+import { getLanguage, setLanguage } from '../../utils/language';
 import {useTranslations} from 'next-intl';
 import './MenuList.scss'
 import { useEffect, useState } from 'react';

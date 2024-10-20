@@ -1,4 +1,3 @@
-import './ModelView.scss'
 import React, { Suspense } from 'react';
 import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber';
@@ -8,7 +7,7 @@ import { OrbitControls } from '@react-three/drei';
 
 const ModelView = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className= 'flex justify-center text-white'>Loading...</div>}>
       <Canvas style={{ height: '500px' }}>
         <OrbitControls
           makeDefault
