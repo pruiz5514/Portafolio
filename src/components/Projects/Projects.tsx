@@ -1,7 +1,6 @@
 'use client'
 // import { PinContainer } from '../PinContainer/3d-pin';
 import { projects } from '@/data/projects';
-import ProjectCard from '../ProjectCard/ProjectCard';
 import './Projects.scss'
 import { useTranslations } from 'next-intl';
 import { IProject } from '@/types/Iproject';
