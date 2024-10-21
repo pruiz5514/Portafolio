@@ -21,7 +21,9 @@
     },
 
     "Projects": {
-      "title" : "Projects"
+      "title" : "Projects",
+      "code" : "Visit code",
+      "page" : "Visit page"
     },
 
     "Contact" : {
