@@ -2,7 +2,7 @@ import { FaGithub } from 'react-icons/fa'
 import Button from '../UI/Button/Button'
 import './ProjectCard.scss'
 import { TbWorldWww } from 'react-icons/tb'
-import { IProject } from '@/types/project'
+import { IProject } from '@/types/Iproject'
 import Link from 'next/link'
 
 interface CardProps {

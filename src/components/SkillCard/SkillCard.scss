@@ -1,0 +1,47 @@
+@import '../../app/globals.scss';
+
+.skill_card-container{
+    height: 170px;
+    width: 150px;
+    background-color: $black;
+    border-radius: 12px;
+    padding: 10px;
+
+    .logo-container{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo-img{
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+    .skill-h2{
+        text-align: center;
+        color: $gray;
+        font-size: 24px;
+    }
+
+}
+
+@media (min-width: 500px){
+    .skill_card-container{
+        height: 280px;
+        width: 300px;
+
+        .logo-container{
+            width: 100%;
+            height: 200px;
+    
+            .logo-img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    
+}

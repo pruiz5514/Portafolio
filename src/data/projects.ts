@@ -1,4 +1,6 @@
-export const projects = [
+import { IProject } from "@/types/Iproject";
+
+export const projects: IProject[] = [
     {
         name: 'Patking now',
         description : 'Pagina para la reserva de parqueaderos',

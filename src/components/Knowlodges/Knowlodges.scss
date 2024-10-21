@@ -1,0 +1,44 @@
+@import '../../app/globals.scss';
+
+.knowlodges-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $dark-gray;
+    padding: 30px 0;
+
+    .knowlodges-container{
+        width: 85%;
+        margin: 0 auto;
+        height: 100%;
+
+        .knowlodges-h1{
+            color: $gray;
+            font-size: 50px;
+            margin-bottom: 20px;
+            opacity: 0;
+        }
+
+        .skills-container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            opacity: 0;
+            transform: translateY(100px);
+        }
+    }
+}
+
+@media (min-width: 900px){
+    .knowlodges-section{
+        padding-top: 60px;
+        .knowlodges-container{
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+            padding: 0;
+            
+        }
+    }
+}
