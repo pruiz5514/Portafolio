@@ -1,6 +1,6 @@
 'use client'
 // import { PinContainer } from '../PinContainer/3d-pin';
-import { projects } from '@/data/projects';
+
 import './Projects.scss'
 import { useTranslations } from 'next-intl';
 import { IProject } from '@/types/Iproject';
@@ -11,12 +11,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
+import { projects } from '@/data/projects';
 
 const Projects = () => {
   const t = useTranslations('Projects');
   useGSAP(() => {
     animateWithGsap('.projects-h1', {y:0, opacity:1})
     animateWithGsap('.about-text_container', {y:0, opacity:1, duration:1, ease: 'power2.inOut'})
+    animateWithGsap('.projects_cards-container', {y:0, opacity:1})
   },[])
 
   return (
@@ -24,13 +26,13 @@ const Projects = () => {
       <div className='projects-container'>
         <h1 className='projects-h1'> {t('title')}</h1>
 
-        <div>
+        <div className='projects_cards-container'>
           {projects.map((project:IProject) => (
             <Card3D key={project.name} className="inter-var">
-              <CardBody className="bg-cardGray relative group/card  border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-cardGray relative group/card  border-black/[0.1] w-auto sm:w-[28rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
-                  className="text-xl font-bold text-white"
+                  className="text-3xl font-bold text-white"
                 >
                   {project.name}
                 </CardItem>
@@ -48,17 +50,21 @@ const Projects = () => {
                   className="w-full mt-4"
                 >
                   <Image
-                    src='/image/parking_now.png'
+                    src={project.img}
                     height="1000"
                     width="1000"
                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                     alt={project.name}
                   />
                 </CardItem>
-                <div>
-                  oeee
-                </div>
-                <div className="flex justify-between items-center mt-20">
+                <CardItem 
+                  translateZ="50"
+                  className= 'flex text-4xl py-8 text-white gap-7 w-full justify-center'
+                >
+                  {project.stacks.map(stack => stack)} 
+
+                </CardItem>
+                <div className="flex justify-between items-center mt-2">
                   <CardItem
                     translateZ={20}
                     translateX={-40}

@@ -50,8 +50,8 @@ export const skills: ISkills[] = [
         img: 'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg'
     },
     {
-        name: 'Python',
-        img: 'https://cdn.worldvectorlogo.com/logos/python-5.svg'
+        name: 'GIT',
+        img: 'https://cdn.worldvectorlogo.com/logos/git-icon.svg'
     },
     
 ]

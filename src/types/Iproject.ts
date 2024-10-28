@@ -3,5 +3,6 @@ export interface IProject {
     description : string;
     img : string;
     urlWeb: string;
-    urlCode:  string
+    urlCode:  string;
+    stacks:  React.ReactNode[];
 }
