@@ -1,6 +1,12 @@
 export interface IProject {
-    name: string;
-    description : string;
+    name: {
+        en: string;
+        es: string;
+      };
+      description: {
+        en: string;
+        es: string;
+      };
     img : string;
     urlWeb: string;
     urlCode:  string;

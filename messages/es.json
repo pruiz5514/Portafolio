@@ -21,7 +21,9 @@
     },
 
     "Projects": {
-      "title" : "Proyectos"
+      "title" : "Proyectos",
+      "code" : "Ver código",
+      "page" : "Ver página"
     },
 
     "Contact" : {
@@ -33,9 +35,9 @@
     },
 
     "Input" : {
-      "placeholder-name" : "Nombre comleto",
+      "placeholder-name" : "Nombre completo",
       "placeholder-email" : "Correo electronico",
-      "textarea": "Escribe un mesnaje",
+      "textarea": "Escribe un mensaje",
       "button-text": "Enviar"
     }
   }

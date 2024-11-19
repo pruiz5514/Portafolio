@@ -11,7 +11,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
-import { projects } from '@/data/projects';
+import { ProjectsArray } from '@/data/projects';
+
 
 const Projects = () => {
   const t = useTranslations('Projects');
@@ -21,27 +22,28 @@ const Projects = () => {
     animateWithGsap('.projects_cards-container', {y:0, opacity:1})
   },[])
 
+  const language = localStorage.getItem('lang')
   return (
     <section className="projects-section">
       <div className='projects-container'>
         <h1 className='projects-h1'> {t('title')}</h1>
 
         <div className='projects_cards-container'>
-          {projects.map((project:IProject) => (
-            <Card3D key={project.name} className="inter-var">
+          {ProjectsArray.map((project:IProject) => (
+            <Card3D key={project.name.en} className="inter-var">
               <CardBody className="bg-cardGray relative group/card  border-black/[0.1] w-auto sm:w-[28rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-3xl font-bold text-white"
                 >
-                  {project.name}
+                  { language === 'en' ? (project.name.en) : (project.name.es)}
                 </CardItem>
                 <CardItem
                   as="p"
                   translateZ="60"
                   className="text-white text-base max-w-sm mt-2"
                 >
-                  {project.description}
+                  { language === 'en' ? (project.description.en) : (project.description.es)}
                 </CardItem>
                 <CardItem
                   translateZ="100"
@@ -54,7 +56,7 @@ const Projects = () => {
                     height="1000"
                     width="1000"
                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                    alt={project.name}
+                    alt = { language === 'en' ? (project.name.en) : (project.name.es)}
                   />
                 </CardItem>
                 <CardItem 
@@ -71,7 +73,7 @@ const Projects = () => {
                     as="button"
                     className="px-4 py-2 rounded-xl text-base font-normal text-white  "
                   >
-                    <Link target='blanck' href={project.urlCode} className='flex items-center gap-x-2'><FaGithub className='text-xl'/> {t("code")}</Link>
+                    <Link target='blanck' href={project.urlCode} className='flex items-center gap-x-2'><FaGithub className='text-xl'/> {t('code')}</Link>
                   </CardItem>
                   <CardItem
                     translateZ={20}
@@ -79,7 +81,7 @@ const Projects = () => {
                     as="button"
                     className="px-4 py-2 rounded-xl bg-darkGray text-white text-base font-bold"
                   >
-                    <Link target='blanck' href={project.urlWeb}  className='flex items-center gap-x-2'><TbWorldWww className='text-xl'/>{t("page")}</Link>
+                    <Link target='blanck' href={project.urlWeb}  className='flex items-center gap-x-2'><TbWorldWww className='text-xl'/>{t('page')}</Link>
                   </CardItem>
                 </div>
               </CardBody>

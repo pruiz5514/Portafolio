@@ -40,5 +40,9 @@
       "placeholder-email" : "Email",
       "textarea": "Write a message here",
       "button-text": "Send"
+    },
+
+    "Projects-description" : {
+      "parking-now" : "Page for the publication and reservation of parking spaces"
     }
   }
