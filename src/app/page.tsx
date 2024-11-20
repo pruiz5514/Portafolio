@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe/AboutMe";
 import ContactMe from "@/components/ContactMe /ContactMe";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Knowlodges from "@/components/Knowlodges/Knowlodges";
@@ -16,6 +17,7 @@ export default function Home() {
       <Knowlodges/>
       <Projects/>
       <ContactMe/>
+      <Footer/>
     </div>
   );
 }

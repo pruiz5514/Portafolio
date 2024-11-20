@@ -18,7 +18,7 @@ const MenuList = () => {
     const lang = event.target.value;
     setLanguage(lang);
     setLanguageState(lang)
-    localStorage.setItem('lang', lang)
+    sessionStorage.setItem('lang', lang)
   } 
   const t = useTranslations('Header');
 
