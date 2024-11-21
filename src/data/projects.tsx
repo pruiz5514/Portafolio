@@ -65,5 +65,34 @@ export const ProjectsArray: IProject[] = [
         urlWeb: 'https://jobs-system.vercel.app/',
         urlCode: 'https://github.com/pruiz5514/jobs-system',
         stacks: [<TbBrandNextjs key={'next'}/>, <SiTypescript key={'ts'}/>, <FaSass key={'sass'}/>]
-    }
+    },
+    {
+        name: {
+            en: 'Volunteering Manager',
+            es: 'Administrador de voluntariados'
+        },
+        description : {
+            en: 'Platform for projects and volunteers management',
+            es: 'Plataforma para la gestión de proyectos y voluntarios.'
+        },
+        img : '/image/jobs_system.png',
+        urlWeb: 'https://jobs-system.vercel.app/',
+        urlCode: 'https://github.com/pruiz5514/jobs-system',
+        stacks: [<TbBrandNextjs key={'next'}/>, <SiTypescript key={'ts'}/>, <FaSass key={'sass'}/>, <RiTailwindCssFill key={'tailwind'}/>]
+    },
+    {
+        name: {
+            en: 'Medallo Barbershop',
+            es: 'Medallo Barbershop'
+        },
+        description : {
+            en: 'Platform for the management of a barbershop',
+            es: 'Plataforma para la gestión de una barberia.'
+        },
+        img : '/image/jobs_system.png',
+        urlWeb: 'https://jobs-system.vercel.app/',
+        urlCode: 'https://github.com/pruiz5514/jobs-system',
+        stacks: [<TbBrandNextjs key={'next'}/>, <SiTypescript key={'ts'}/>, <FaSass key={'sass'}/>, <RiTailwindCssFill key={'tailwind'}/>]
+    },
+    
 ]

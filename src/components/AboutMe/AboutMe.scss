@@ -51,6 +51,9 @@
 @media (min-width: 900px){
     .about-me_section{
         padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         .about-me_container{
             width: 80%;
