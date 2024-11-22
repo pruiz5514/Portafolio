@@ -12,11 +12,22 @@ export default function Home() {
   return (
     <div className="bg-black w-full h-[100vh]">
       <Header/>
-      <Hero/>
-      <AboutMe/>
-      <Knowlodges/>
-      <Projects/>
-      <ContactMe/>
+      <section className="main_page-section">
+        <Hero/>
+      </section>
+      <section className="main_page-section">
+        <AboutMe/>
+      </section>
+      <section className="main_page-section">
+        <Knowlodges/>
+      </section>
+      <section className="main_page-section">
+        <Projects/>
+      </section>
+      <section className="main_page-section">
+        <ContactMe/>
+      </section>
+
       <Footer/>
     </div>
   );

@@ -16,8 +16,8 @@ export const ProjectsArray: IProject[] = [
             es: 'Parking now'
         },
         description : {
-            en: 'Parking now',
-            es: 'Parking now'
+            en: 'Page for rental of parking lots.',
+            es: 'Pagina para renta de estacionamientos'
         },
         img : '/image/parking_now.png',
         urlWeb: 'https://parking-now.vercel.app/',
@@ -38,20 +38,20 @@ export const ProjectsArray: IProject[] = [
         urlCode: 'https://github.com/pruiz5514/apple-clone',
         stacks: [<FaReact key={'react'} />, <IoLogoJavascript key={'js'}/>,<RiTailwindCssFill key={'tailwind'}/>, <TbBrandThreejs key={'three'}/>]
     },
-    {
-        name: {
-            en: 'Jomchores',
-            es : 'Jomchores'
-        },
-        description : {
-            en: 'Page to publish home services',
-            es: 'Pagina para publicar servicios del hogar'
-        },
-        img : '/image/apple_clone.png',
-        urlWeb: 'https://apple-clone-three-self.vercel.app/',
-        urlCode: 'https://github.com/nubenunca/Jomchores',
-        stacks: [ <IoLogoJavascript key={'js'}/>,<FaSass key={'sass'}/>, <FaBootstrap key={'bootstrap'}/>]
-    },
+    // {
+    //     name: {
+    //         en: 'Jomchores',
+    //         es : 'Jomchores'
+    //     },
+    //     description : {
+    //         en: 'Page to publish home services',
+    //         es: 'Pagina para publicar servicios del hogar'
+    //     },
+    //     img : '/image/apple_clone.png',
+    //     urlWeb: 'https://apple-clone-three-self.vercel.app/',
+    //     urlCode: 'https://github.com/nubenunca/Jomchores',
+    //     stacks: [ <IoLogoJavascript key={'js'}/>,<FaSass key={'sass'}/>, <FaBootstrap key={'bootstrap'}/>]
+    // },
     {
         name: {
             en: 'Jobs Manager',
@@ -69,15 +69,15 @@ export const ProjectsArray: IProject[] = [
     {
         name: {
             en: 'Volunteering Manager',
-            es: 'Administrador de voluntariados'
+            es: 'Gestor de voluntariados'
         },
         description : {
             en: 'Platform for projects and volunteers management',
             es: 'Plataforma para la gestión de proyectos y voluntarios.'
         },
-        img : '/image/jobs_system.png',
-        urlWeb: 'https://jobs-system.vercel.app/',
-        urlCode: 'https://github.com/pruiz5514/jobs-system',
+        img : '/image/volunteer.png',
+        urlWeb: 'https://volunteering-orpin.vercel.app/',
+        urlCode: 'https://github.com/pruiz5514/Volunteering',
         stacks: [<TbBrandNextjs key={'next'}/>, <SiTypescript key={'ts'}/>, <FaSass key={'sass'}/>, <RiTailwindCssFill key={'tailwind'}/>]
     },
     {
@@ -89,9 +89,9 @@ export const ProjectsArray: IProject[] = [
             en: 'Platform for the management of a barbershop',
             es: 'Plataforma para la gestión de una barberia.'
         },
-        img : '/image/jobs_system.png',
-        urlWeb: 'https://jobs-system.vercel.app/',
-        urlCode: 'https://github.com/pruiz5514/jobs-system',
+        img : '/image/medallo_babershop.png',
+        urlWeb: 'https://medallo-barbershop.vercel.app/',
+        urlCode: 'https://github.com/pruiz5514/beuty-salon',
         stacks: [<TbBrandNextjs key={'next'}/>, <SiTypescript key={'ts'}/>, <FaSass key={'sass'}/>, <RiTailwindCssFill key={'tailwind'}/>]
     },
     

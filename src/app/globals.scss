@@ -14,3 +14,11 @@ $gray-button: #ded9db;
     box-sizing: border-box;
 }
 
+html{
+    scroll-snap-type: y proximity;   
+}
+
+.main_page-section{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
