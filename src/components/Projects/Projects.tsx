@@ -22,11 +22,8 @@ const Projects = () => {
     animateWithGsap('.projects_cards-container', {y:0, opacity:1})
   },[])
 
-  let language = sessionStorage.getItem('lang');
-  if(!length){
-    language = 'en'
-  };
-  
+  let language = sessionStorage.getItem('lang') || 'en';
+
   return (
     <section className="projects-section" id='projects'>
       <div className='projects-container'>
