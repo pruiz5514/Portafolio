@@ -1,6 +1,6 @@
 {
     "Header": {
-      "home": "Home",
+      "home": "About me",
       "knowlodges": "Knowlodges",
       "projects" : "Projects",
       "contact" : "Contact me"
@@ -17,7 +17,7 @@
     },
 
     "Knowlodges" : {
-      "title": "Knowlodges"
+      "title": "Knowlodge"
     },
 
     "Projects": {

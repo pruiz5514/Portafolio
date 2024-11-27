@@ -2,6 +2,7 @@ import { getLanguage, setLanguage } from '../../utils/language';
 import {useTranslations} from 'next-intl';
 import './MenuList.scss'
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const MenuList = () => {
   const [language, setLanguageState] = useState('');
@@ -24,10 +25,10 @@ const MenuList = () => {
 
   return (
     <ul>
-        <li>{t('home')}</li>
-        <li>{t('knowlodges')}</li>
-        <li>{t('projects')}</li>
-        <li>{t('contact')}</li>
+        <li><Link href={'/#about-me'} >{t('home')}</Link></li>
+        <li><Link href={'/#knowlodge'}>{t('knowlodges')}</Link></li>
+        <li><Link href={'/#projects'}>{t('projects')}</Link></li>
+        <li><Link href={'/#contact'}>{t('contact')}</Link></li>
         <li>
             <select className='language-select' onChange={handleSelect} value={language}>
                 <option value="en"> English</option>

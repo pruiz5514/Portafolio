@@ -16,7 +16,7 @@ const Knowlodges = () => {
   },[])
 
   return (
-    <section className='knowlodges-section'>
+    <section className='knowlodges-section' id='knowlodge'>
         <div className='knowlodges-container'>
             <h1 className='knowlodges-h1'> {t('title')} </h1>
             <div className='skills-container'>

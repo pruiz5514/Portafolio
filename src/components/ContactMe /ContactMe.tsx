@@ -17,7 +17,7 @@ const ContactMe = () => {
   },[])
 
   return (
-    <section className="contact_me-section">
+    <section className="contact_me-section" id='contact'>
       <div className='contact_me-container'>
         <h1 className='contact_me-h1'> {t('title')}</h1>
         <div className='contact_me_info-container'>

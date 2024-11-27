@@ -14,7 +14,7 @@ const AboutMe = () => {
   },[])
 
   return (
-    <section className='about-me_section'>
+    <section className='about-me_section' id='about-me'>
       <div className='about-me_container'>
         <h1 className='about-me_title'>{t('title')}</h1>
           <div className='about-info_container'>
