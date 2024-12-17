@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Roboto } from "next/font/google";
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getMessages} from 'next-intl/server';
@@ -29,6 +30,7 @@ export default async function RootLayout({
           {children}
         </NextIntlClientProvider>
       </body>
+      <GoogleAnalytics gaId="G-5GTLVS1FL1" />
     </html>
   );
 }
