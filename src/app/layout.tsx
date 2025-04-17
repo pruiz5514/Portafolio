@@ -30,7 +30,7 @@ export default async function RootLayout({
           {children}
         </NextIntlClientProvider>
       </body>
-      <GoogleAnalytics gaId="G-5GTLVS1FL1" />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS as string} />
     </html>
   );
 }
