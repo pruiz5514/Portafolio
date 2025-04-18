@@ -25,11 +25,13 @@ const Projects = () => {
   },[])
 
   useEffect(() => {
-    const storedLang = sessionStorage.getItem('lang');
-    if (storedLang) {
-      setLanguage(storedLang);
-    } else {
-      setLanguage('en'); // Valor predeterminado si no hay valor en sessionStorage
+    if (typeof window !== "undefined") {
+      const storedLang = sessionStorage.getItem('lang');
+      if (storedLang) {
+        setLanguage(storedLang);
+      } else {
+        setLanguage('en'); // Valor predeterminado si no hay valor en sessionStorage
+      }
     }
   }, []);
 
