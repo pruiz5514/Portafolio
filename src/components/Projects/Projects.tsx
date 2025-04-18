@@ -12,17 +12,26 @@ import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
 import { ProjectsArray } from '@/data/projects';
+import { useEffect, useState } from 'react';
 
 
 const Projects = () => {
   const t = useTranslations('Projects');
+  const [language, setLanguage] = useState<string>('en');
   useGSAP(() => {
     animateWithGsap('.projects-h1', {y:0, opacity:1})
     animateWithGsap('.about-text_container', {y:0, opacity:1, duration:1, ease: 'power2.inOut'})
     animateWithGsap('.projects_cards-container', {y:0, opacity:1})
   },[])
 
-  let language = sessionStorage.getItem('lang') || 'en';
+  useEffect(() => {
+    const storedLang = sessionStorage.getItem('lang');
+    if (storedLang) {
+      setLanguage(storedLang);
+    } else {
+      setLanguage('en'); // Valor predeterminado si no hay valor en sessionStorage
+    }
+  }, []);
 
   return (
     <section className="projects-section" id='projects'>
